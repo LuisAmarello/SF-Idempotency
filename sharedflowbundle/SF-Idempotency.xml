@@ -1,0 +1,22 @@
+<SharedFlowBundle revision="2" name="SF-Idempotency">
+    <DisplayName></DisplayName>
+    <Description></Description>
+    <CreatedAt>1728949742934</CreatedAt>
+    <LastModifiedAt>1728949773920</LastModifiedAt>
+    <Policies>
+        <Policy>AM-Code-Variable</Policy>
+        <Policy>EV-Headers</Policy>
+        <Policy>JS-Cleand-Payload</Policy>
+        <Policy>HMAC</Policy>
+        <Policy>JS-Clean-URI</Policy>
+    </Policies>
+    <Resources>
+        <Resource>jsc://JS-print-value.js</Resource>
+        <Resource>jsc://JS-Cleand-Payload.js</Resource>
+        <Resource>jsc://JS-Clean-URI.js</Resource>
+    </Resources>
+    <SharedFlows>
+        <SharedFlow>default</SharedFlow>
+    </SharedFlows>
+    <subType>SharedFlow</subType>
+</SharedFlowBundle>

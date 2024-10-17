@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage continueOnError="false" enabled="true" name="AM-Code-Variable">
+    <DisplayName>AM-Code-Variable</DisplayName>
+    <Properties/>
+    <AssignVariable>
+        <Name>private.code</Name>
+        <Template>{flow.request.headers.b-application}{flow.request.headers.authentication-code}{flow.request.content}</Template>
+    </AssignVariable>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+</AssignMessage>

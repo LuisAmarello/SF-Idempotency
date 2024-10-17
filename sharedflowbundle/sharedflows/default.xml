@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SharedFlow name="default">
+    <Step>
+        <Name>EV-Headers</Name>
+    </Step>
+    <Step>
+        <Name>JS-Clean-URI</Name>
+        <Condition>(request.verb == "GET")</Condition>
+    </Step>
+    <Step>
+        <Name>JS-Cleand-Payload</Name>
+        <Condition>(request.verb == "POST")</Condition>
+    </Step>
+    <Step>
+        <Name>AM-Code-Variable</Name>
+        <Condition>(request.verb == "POST")</Condition>
+    </Step>
+    <Step>
+        <Name>HMAC</Name>
+        <Condition>(request.verb == "POST")</Condition>
+    </Step>
+</SharedFlow>
